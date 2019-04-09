@@ -51,7 +51,7 @@ $('#search-input').on('keyup', function (e) {
 
 $('#anime-list').on('click', '.see-detail', function () {
     $('.modal-title').html('');
-    $('.modal-body').html(`Error`);
+    $('.modal-body').html(``);
     $.ajax({
         url: 'https://api.jikan.moe/v3/anime/' + $(this).data('id'),
         type: 'get',
